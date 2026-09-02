@@ -32,3 +32,13 @@ section { margin-bottom: 46px; }.section-heading { margin-bottom: 16px; }.sectio
 .goal-insight > .v-btn { padding-left: 16px !important; color: white !important; background: var(--cta-blue) !important; }
 
 .goal-nav .goal-nav__button--active { color: var(--cta-blue); }
+
+:root { --ink: #1b2b3a; --muted: #6f8191; --line: #d8e2ea; --paper: #f2f6f9; }
+.insight-card, .kpi-card, .panel, .partner-summary, .goal-nav, .goal-insight, .deep-kpi { background: #fbfdff; }
+
+.v-theme--dark { --ink: #edf4fb; --muted: #a9b9c8; --line: #34495d; --paper: #0e1722; }
+.v-theme--dark.v-application { background: var(--paper) !important; color: var(--ink); }
+.v-theme--dark .insight-card, .v-theme--dark .kpi-card, .v-theme--dark .panel, .v-theme--dark .partner-summary, .v-theme--dark .goal-nav, .v-theme--dark .goal-insight, .v-theme--dark .deep-kpi { background: #172637; }
+.v-theme--dark .insight-card h3, .v-theme--dark .insight-card > p:not(.card-kicker), .v-theme--dark .kpi-card strong, .v-theme--dark .strategy-label, .v-theme--dark .goal-name strong, .v-theme--dark .goal-insight strong { color: var(--ink); }
+.v-theme--dark .recommended-action { background: #1d3248; }
+.v-theme--dark .goal-nav .goal-nav__button--active { background: #203d4b; }

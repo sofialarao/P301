@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useTheme } from 'vuetify'
 import { Line } from 'vue-chartjs'
 import { Chart as ChartJS, CategoryScale, Filler, Legend, LinearScale, LineElement, PointElement, Tooltip } from 'chart.js'
 import overview from './data/overview.json'
@@ -13,6 +14,7 @@ const healthView = ref('Impact')
 const showPrototypeNotice = ref(false)
 const selectedPartner = ref(overview.diveDeep.partners[0].name)
 const selectedGoal = ref(overview.diveDeep.goals[0].label)
+const theme = useTheme()
 
 const activePartner = computed(() => overview.diveDeep.partners.find((partner) => partner.name === selectedPartner.value) ?? overview.diveDeep.partners[0])
 const activeGoal = computed(() => overview.diveDeep.goals.find((goal) => goal.label === selectedGoal.value) ?? overview.diveDeep.goals[0])
@@ -48,6 +50,10 @@ function prototypeAction() {
   showPrototypeNotice.value = true
   window.setTimeout(() => (showPrototypeNotice.value = false), 3000)
 }
+
+function toggleTheme() {
+  theme.change(theme.global.current.value.dark ? 'light' : 'dark')
+}
 </script>
 
 <template>
@@ -60,7 +66,7 @@ function prototypeAction() {
            <v-btn variant="text" :class="{ 'nav-tabs__button--active': activeTab === 'Overview' }" @click="activeTab = 'Overview'">Overview</v-btn>
            <v-btn variant="text" :class="{ 'nav-tabs__button--active': activeTab === 'Dive Deep' }" @click="activeTab = 'Dive Deep'">Dive Deep</v-btn>
          </nav>
-      <v-btn icon variant="text" class="theme-button" aria-label="Toggle dark mode" @click="prototypeAction"><v-icon icon="mdi-weather-night" /></v-btn>
+      <v-btn icon variant="text" class="theme-button" aria-label="Toggle dark mode" @click="toggleTheme"><v-icon icon="mdi-weather-night" /></v-btn>
       <v-avatar color="#ffffff" size="40" class="avatar">J</v-avatar>
     </v-app-bar>
 
