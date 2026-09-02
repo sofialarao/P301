@@ -27,5 +27,22 @@
     { "label": "Renewable adoption", "status": "On track", "start": 18, "duration": 62, "progress": 64, "tone": "blue" },
     { "label": "Waste diversion", "status": "At risk", "start": 34, "duration": 42, "progress": 54, "tone": "amber" },
     { "label": "Community reach", "status": "On track", "start": 46, "duration": 38, "progress": 72, "tone": "violet" }
-  ]
+  ],
+  "diveDeep": {
+    "partners": [
+      { "name": "Northstar Manufacturing", "sector": "Industrial goods", "score": 82, "change": "+6 points", "status": "On track", "impact": [42, 48, 53, 61, 67, 74], "renewables": 71, "waste": 58, "engagement": 88 },
+      { "name": "Lumen Retail Group", "sector": "Retail", "score": 74, "change": "+3 points", "status": "Needs attention", "impact": [38, 42, 47, 49, 53, 57], "renewables": 62, "waste": 46, "engagement": 79 },
+      { "name": "Cobalt Logistics", "sector": "Transport", "score": 69, "change": "+2 points", "status": "Needs attention", "impact": [31, 35, 39, 43, 46, 51], "renewables": 48, "waste": 65, "engagement": 72 }
+    ],
+    "goals": [
+      { "label": "Climate action", "icon": "mdi-weather-windy", "summary": "Emissions intensity has fallen 14% since April, with fleet electrification now ahead of plan.", "action": "Prioritize a supplier data workshop to close the remaining Scope 3 reporting gap." },
+      { "label": "Circularity", "icon": "mdi-recycle", "summary": "Material recovery is improving, though two facilities are below the monthly diversion target.", "action": "Share the waste playbook with local site leads and review recovery contracts this month." },
+      { "label": "Community", "icon": "mdi-account-group-outline", "summary": "Employee volunteering reached 88% of the annual target and school outreach is gaining momentum.", "action": "Match the next volunteer cohort with community programs closest to their distribution hubs." }
+    ],
+    "kpis": [
+      { "label": "ESG maturity score", "value": "82", "detail": "Up 6 points since April", "icon": "mdi-chart-line" },
+      { "label": "Emissions avoided", "value": "74 tCO2e", "detail": "14% below last year", "icon": "mdi-leaf" },
+      { "label": "Data completeness", "value": "93%", "detail": "7 sources pending", "icon": "mdi-database-check-outline" }
+    ]
+  }
 }
