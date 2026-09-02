@@ -1,0 +1,31 @@
+{
+  "period": { "year": "FY26", "month": "September", "label": "September 2026" },
+  "kpis": [
+    { "label": "GHG emissions reduction", "value": "18%", "target": "50% by 2030", "trend": "+3.2%", "tone": "teal" },
+    { "label": "Renewable energy adoption", "value": "64%", "target": "80% by 2030", "trend": "+5.8%", "tone": "blue" },
+    { "label": "Partner ESG goals on track", "value": "86%", "target": "90% annually", "trend": "+4.1%", "tone": "amber" },
+    { "label": "ESG data coverage", "value": "91%", "target": "95% verified", "trend": "+2.4%", "tone": "violet" }
+  ],
+  "insights": [
+    { "category": "Momentum", "title": "Partner progress is ahead of plan", "body": "10 of 12 partners are on track this month, up from 8 in August.", "action": "Review partner progress", "icon": "mdi-trending-up", "tone": "teal" },
+    { "category": "Attention", "title": "Two waste programs need support", "body": "Circularity initiatives are 9% behind the FY26 trajectory.", "action": "See recommended actions", "icon": "mdi-alert-circle-outline", "tone": "amber" },
+    { "category": "Opportunity", "title": "Renewables can unlock more impact", "body": "A 12% increase in renewable adoption could avoid 4.2K tCO₂e this year.", "action": "Explore opportunity", "icon": "mdi-lightbulb-on-outline", "tone": "blue" }
+  ],
+  "health": {
+    "labels": ["Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+    "impact": [8200, 9100, 10400, 9800, 11600, 12500],
+    "target": [8000, 8500, 9000, 9500, 10000, 10500]
+  },
+  "strategy": [
+    { "label": "Climate action", "value": 68, "detail": "18% reduction achieved" },
+    { "label": "Circular economy", "value": 54, "detail": "850 tonnes diverted" },
+    { "label": "Community impact", "value": 72, "detail": "25K people reached" },
+    { "label": "Data & governance", "value": 81, "detail": "91% verified coverage" }
+  ],
+  "goals": [
+    { "label": "GHG reduction", "status": "On track", "start": 8, "duration": 76, "progress": 68, "tone": "teal" },
+    { "label": "Renewable adoption", "status": "On track", "start": 18, "duration": 62, "progress": 64, "tone": "blue" },
+    { "label": "Waste diversion", "status": "At risk", "start": 34, "duration": 42, "progress": 54, "tone": "amber" },
+    { "label": "Community reach", "status": "On track", "start": 46, "duration": 38, "progress": 72, "tone": "violet" }
+  ]
+}
